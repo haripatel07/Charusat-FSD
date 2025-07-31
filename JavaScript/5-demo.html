@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Document</title>
+        <script>
+            function getData(){
+                var a = document.getElementById("txt1").innerHTML
+                //console.log(a)
+                document.getElementById("ans").innerHTML = a
+            }
+            function setData(){
+                document.getElementById("txt1").innerHTML = "<i>HELLO JS</i>"
+            }
+        </script>
+    </head>
+    <body>
+        <input type="button" onclick="getData()" value="Get">
+        <input type="button" onclick="setData()" value="Set">
+        <p id="txt1"><b>I am P Tag</b></p>
+        <p id="ans"></p>
+    </body>
+</html>

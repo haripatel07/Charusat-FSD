@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>title</title>
+    <script>
+        let a = 10
+        let b = 20
+        let c = a + b
+        document.write("<br/>A value is  " + a)
+        document.write("<br/>" + "B value is  " + b)
+        document.write("<br/>" + "C value is " + c)
+
+        console.log("A value is " + a)
+        console.log("B value is " + b)
+        console.log("C value is " + c)
+
+
+        for (let i = 0; i < 10; i++) {
+            document.write("<br/>" + "Value of i is " + i)
+        }
+
+        var arr = [10, 20, 30, 40, 50]
+        for (i in arr){
+            document.write("<br/> Index is " + i +  " Value of i is " + i)
+        }
+
+        for (i of arr){
+            document.write("<br/>" + "Value of i is " + i)
+        }
+
+        arr.forEach(function (value, index) {
+            document.write("<br/>" + "Value of i is " + value + " at index " + index)
+        })
+
+
+        
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>

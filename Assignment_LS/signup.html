@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Signup</title>
+</head>
+<body>
+  <h2>Signup</h2>
+  <input id="name" placeholder="Name"><br>
+  <input id="email" placeholder="Email"><br>
+  <input id="mobile" placeholder="Mobile"><br>
+  <input id="password" type="password" placeholder="Password"><br>
+  <input id="address" placeholder="Address"><br>
+  <button onclick="signup()">Signup</button>
+
+  <script>
+    function signup() {
+      const user = {
+        name: document.getElementById('name').value,
+        email: document.getElementById('email').value,
+        mobile: document.getElementById('mobile').value,
+        password: document.getElementById('password').value,
+        address: document.getElementById('address').value
+      };
+
+      localStorage.setItem('user', JSON.stringify(user));
+      alert('Signup successful!');
+      window.location.href = "dashboard.html";
+    }
+  </script>
+</body>
+</html>

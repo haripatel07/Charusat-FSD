@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard</title>
+</head>
+<body>
+  <h2 id="welcome">Hi, </h2>
+  <button onclick="window.location.href='change_password.html'">Change Password</button>
+  <button onclick="logout()">Logout</button>
+
+  <script>
+    const name = localStorage.getItem('loggedInUser');
+    document.getElementById('welcome').innerText += name;
+
+    function logout() {
+      localStorage.removeItem('loggedInUser');
+      alert("Logged out!");
+      window.location.href = "login.html";
+    }
+  </script>
+</body>
+</html>
