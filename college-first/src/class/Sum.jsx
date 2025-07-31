@@ -3,19 +3,31 @@ import React from "react";
 class Sum extends React.Component{
     constructor(props){
         super(props);
-        this.state = { };
+        this.state = { temp : {} };
+    }
+    doValidation(){
+        const { no1, no2 } = this.state
+        var temp = {}
+        var isValid = true
+        // Check Condition for TextBox1
+        if(!no1){
+            temp.txt1 = "Enter No1"
+            isValid = false
+        }
+        if (isNaN(no1)){
+            temp.txt1 = "Enter only digits in no1"
+            isValid = false
+        }
+        if(!no2){
+            temp.txt2 = "Enter No2"
+            isValid = false
+        }
+        this.setState({ errmsg : temp })
+        return isValid;
     }
     doSum(){
-        if (!this.state.no1){
-            alert("Enter no1")
-        }
-        else if (!this.state.no2){
-            alert("Enter no2")
-        }
-        else{
-            var c = parseInt(this.state.no1) + parseInt(this.state.no2)
-            this.setState({msg:c})
-        }
+        const ans = this.doValidation();
+        
     }
     render(){
         return(
