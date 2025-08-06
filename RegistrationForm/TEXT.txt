@@ -1,0 +1,17 @@
+npm create vite@latest
+◇  Project name:
+│  sans
+│
+◇  Select a framework:
+│  React
+│
+◇  Select a variant:
+│  JavaScript
+│
+◇  Scaffolding project in D:\SEM 5\AIML302_Full Stack Web Development\RegistrationForm-React-main\brijesh\sans...
+│
+└  Done. Now run:
+
+  cd sans
+  npm install
+  npm run dev

@@ -5,7 +5,7 @@ class Home extends React.Component{
         super(props);
         this.state = { };
     }
-    render(){
+    render(){ 
         const [count, setCount] = useState(0);
         
         return (
