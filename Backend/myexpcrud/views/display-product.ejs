@@ -4,6 +4,7 @@
         <th>Name</th>
         <th>Price</th>
         <th>Details</th>
+        <th>Actions</th>
     </tr>
     <% for(var i = 0; i < mydata.length; i++){%>
     <tr>
@@ -11,6 +12,7 @@
         <td><%= mydata[i].pname %></td>
         <td><%= mydata[i].pprice %></td>
         <td><%= mydata[i].pdetails %></td>
+        <td><a href = "/edit-product/<%= mydata[i]._id %>">Edit</a> | <a href = "/delete-product/<%= mydata[i]._id %>" onclick = "return confirm('Are You Sure?')">Delete</a></td>
     </tr>
     <% } %>
 

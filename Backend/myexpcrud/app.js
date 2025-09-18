@@ -45,4 +45,8 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
+app.listen(5000, () => {
+  console.log("Server started at port 5000");
+});
+
 module.exports = app;
